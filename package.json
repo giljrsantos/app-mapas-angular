@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "d": "ng serve",
-    "format": "npx prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"src/**/*.scss\" \"src/**/*.html\"",
+    "f": "npx prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"src/**/*.scss\" \"src/**/*.html\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "t": "jest --no-cache --coverage"
