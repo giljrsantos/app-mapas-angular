@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed,
+} from '@angular/core/testing';
 
 import { MapScreenComponent } from '../src/app/maps/screens/map-screen/map-screen.component';
 
@@ -8,7 +11,7 @@ describe('MapScreenComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MapScreenComponent]
+      declarations: [MapScreenComponent],
     });
     fixture = TestBed.createComponent(MapScreenComponent);
     component = fixture.componentInstance;

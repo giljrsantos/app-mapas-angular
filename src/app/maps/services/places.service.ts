@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PlacesService {
-
   public userLocation?: [number, number];
 
   get isUserLocationReady(): boolean {
@@ -15,24 +14,24 @@ export class PlacesService {
     this.getUserLocation();
   }
 
-  public async getUserLocation(): Promise<[number, number]> {
-
+  public async getUserLocation(): Promise<
+    [number, number]
+  > {
     return new Promise((resolve, reject) => {
-
       navigator.geolocation.getCurrentPosition(
         ({ coords }) => {
-          this.userLocation = [coords.longitude, coords.latitude];
+          this.userLocation = [
+            coords.longitude,
+            coords.latitude,
+          ];
           resolve(this.userLocation);
         },
         (err) => {
           alert('Não é possível obter geolocalização');
           console.log(err);
           reject();
-        }
-      )
-
+        },
+      );
     });
-
   }
-
 }

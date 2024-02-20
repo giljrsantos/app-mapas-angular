@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed,
+} from '@angular/core/testing';
 
 import { LoadingComponent } from '../src/app/maps/components/loading/loading.component';
 
@@ -8,7 +11,7 @@ describe('LoadingComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LoadingComponent]
+      declarations: [LoadingComponent],
     });
     fixture = TestBed.createComponent(LoadingComponent);
     component = fixture.componentInstance;

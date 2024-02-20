@@ -8,12 +8,9 @@ import { LoadingComponent } from './components/loading/loading.component';
   declarations: [
     MapScreenComponent,
     MapViewComponent,
-    LoadingComponent
+    LoadingComponent,
   ],
-  imports: [
-    CommonModule
-  ], exports: [
-    MapScreenComponent
-  ]
+  imports: [CommonModule],
+  exports: [MapScreenComponent],
 })
-export class MapsModule { }
+export class MapsModule {}

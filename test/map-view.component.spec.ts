@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed,
+} from '@angular/core/testing';
 
 import { MapViewComponent } from '../src/app/maps/components/map-view/map-view.component';
 
@@ -8,7 +11,7 @@ describe('MapViewComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MapViewComponent]
+      declarations: [MapViewComponent],
     });
     fixture = TestBed.createComponent(MapViewComponent);
     component = fixture.componentInstance;
